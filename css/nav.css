@@ -26,8 +26,8 @@ nav{
     justify-content: space-between;
 }
 
-nav img{
-    width: 20%;
+.navimage img{
+    width: 6.4vh;
 }
 
 .btn{
