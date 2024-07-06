@@ -1,0 +1,38 @@
+body{
+    background-color:rgb(218, 218, 252);
+}
+
+.card{
+    text-align: center;
+    padding: 3vh;
+    /* background-color:rgb(176, 176, 251); */
+    /* width: 100%; */
+}
+
+.cardtitle{
+    font-size: 5em;
+}
+
+.cardtext p{
+    font-size: 2.5em;
+    /* background-color: blue; */
+}
+
+.emergencycard{
+    background-image: url(/images/emergenciamaisbranco.jpg);
+    background-size: cover;
+}
+
+.fixedincomecard{
+    background-image: url(/images/rendafixamaisbranco.jpg);
+    background-size: cover;
+}
+
+button{
+    font-size: 1.5em;
+}
+
+.variableincomecard{
+    background-image: url(/images/rendavariavelmaisbranco.jpg);
+    background-size: cover;
+}
