@@ -1,3 +1,7 @@
+.inicialtext{
+    font-size: 8rem;
+}
+
 main{
     display: inline-flex;
 }
