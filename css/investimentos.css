@@ -2,11 +2,8 @@ body{
     background-color:rgb(218, 218, 252);
 }
 
-.card{
-    text-align: center;
-    padding: 3vh;
-    /* background-color:rgb(176, 176, 251); */
-    /* width: 100%; */
+main{
+    display: block;
 }
 
 .cardtitle{
@@ -14,25 +11,71 @@ body{
 }
 
 .cardtext p{
-    font-size: 2.5em;
-    /* background-color: blue; */
+    font-size: 2em;
 }
 
-.emergencycard{
+.card {
+    position: relative; /* Para permitir o uso de pseudo-elementos */
+    text-align: center;
+    padding: 3vh;
+    border-color: black;
+    display: block;
+    margin-bottom: 1em;
+}
+
+.emergencycard::before {
     background-image: url(/images/emergenciamaisbranco.jpg);
-    background-size: cover;
 }
 
-.fixedincomecard{
+.fixedincomecard::before {
     background-image: url(/images/rendafixamaisbranco.jpg);
-    background-size: cover;
 }
 
-button{
-    font-size: 1.5em;
-}
-
-.variableincomecard{
+.variableincomecard::before {
     background-image: url(/images/rendavariavelmaisbranco.jpg);
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background-size: cover;
+    opacity: 0.5; /* Ajuste a opacidade conforme necessário */
+    z-index: 0; /* Para garantir que o conteúdo do card fique acima da pseudo-classe */
+}
+
+.card .cardtitle,
+.card .cardtext {
+    position: relative; /* Para garantir que o texto fique acima da pseudo-classe */
+    z-index: 1;
+    color: black; /* Ajuste a cor do texto conforme necessário para garantir legibilidade */
+}
+
+.extra{
+    background-color:rgb(218, 218, 252);
+    width: 100%;
+    align-items: center;
+    display: flex;
+}
+
+.map{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 1em;
+    width: 50%;
+}
+
+.map iframe {
+    flex: 2;
+}
+
+.map .address {
+    flex: 1;
+    font-size: 2em;
+    text-align: justify;
 }
