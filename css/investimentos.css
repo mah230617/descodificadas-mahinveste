@@ -11,7 +11,7 @@ main{
 }
 
 .card {
-    position: relative; /* Para permitir o uso de pseudo-elementos */
+    position: relative;
     text-align: center;
     padding: 3vh;
     border-color: black;
@@ -20,15 +20,15 @@ main{
 }
 
 .emergencycard::before {
-    background-image: url(/images/emergenciamaisbranco.jpg);
+    background-image: url(images/emergenciamaisbranco.jpg);
 }
 
 .fixedincomecard::before {
-    background-image: url(/images/rendafixamaisbranco.jpg);
+    background-image: url(images/rendafixamaisbranco.jpg);
 }
 
 .variableincomecard::before {
-    background-image: url(/images/rendavariavelmaisbranco.jpg);
+    background-image: url(images/rendavariavelmaisbranco.jpg);
 }
 
 .card::before {
