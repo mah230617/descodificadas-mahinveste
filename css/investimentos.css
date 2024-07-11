@@ -20,15 +20,15 @@ main{
 }
 
 .emergencycard::before {
-    background-image: url(images/emergenciamaisbranco.jpg);
+    background-image: url(../images/emergenciamaisbranco.jpg);
 }
 
 .fixedincomecard::before {
-    background-image: url(images/rendafixamaisbranco.jpg);
+    background-image: url(../images/rendafixamaisbranco.jpg);
 }
 
 .variableincomecard::before {
-    background-image: url(images/rendavariavelmaisbranco.jpg);
+    background-image: url(../images/rendavariavelmaisbranco.jpg);
 }
 
 .card::before {
